@@ -27,10 +27,14 @@ test.describe('Seaguntech landing page', () => {
     await expect(page).toHaveTitle('Seaguntech | International technology consulting');
     await expect(page.locator('meta[name="description"]')).toHaveAttribute(
       'content',
-      /helps ambitious teams turn complex ideas into dependable software/,
+      /international technology consulting partner/,
     );
     await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', 'https://seaguntech.com/');
     await expect(page.locator('meta[property="og:title"]')).toHaveAttribute('content', /Seaguntech/);
+    await expect(page.locator('meta[property="og:image"]')).toHaveAttribute(
+      'content',
+      'https://seaguntech.com/og-image.svg',
+    );
     await expect(page.locator('script[type="application/ld+json"]')).toHaveCount(1);
 
     const robots = await request.get('/robots.txt');

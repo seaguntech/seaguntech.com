@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Seaguntech — International technology consulting</title>
+  <desc id="desc">Build what matters. Ship with clarity.</desc>
+  <rect width="1200" height="630" fill="#06121F"/>
+  <path d="M0 500h1200M0 380h1200M240 0v630M480 0v630M720 0v630M960 0v630" stroke="#16385A" stroke-width="1" opacity=".65"/>
+  <circle cx="860" cy="170" r="11" fill="#F97360"/>
+  <path d="M200 390 C420 260 650 330 1000 160" fill="none" stroke="#5EEAD4" stroke-width="3"/>
+  <text x="88" y="112" fill="#5EEAD4" font-family="monospace" font-size="20" letter-spacing="5">INTERNATIONAL TECHNOLOGY CONSULTING</text>
+  <text x="88" y="285" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="76" font-weight="800">Build what matters.</text>
+  <text x="88" y="375" fill="#5EEAD4" font-family="system-ui, sans-serif" font-size="76" font-weight="800">Ship with clarity.</text>
+  <text x="88" y="550" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="28" font-weight="700">SEAGUNTECH.</text>
+</svg>

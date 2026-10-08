@@ -9,11 +9,10 @@ import EngineeringFoundations from '../components/EngineeringFoundations.astro';
 import FounderNote from '../components/FounderNote.astro';
 import ContactPanel from '../components/ContactPanel.astro';
 import SiteFooter from '../components/SiteFooter.astro';
+import { siteContent } from '../content/site';
 import '../styles/global.css';
 
-const title = 'Seaguntech | International technology consulting';
-const description =
-  'Seaguntech helps ambitious teams turn complex ideas into dependable software.';
+const { title, description, ogImage } = siteContent.seo;
 const canonicalUrl = 'https://seaguntech.com/';
 const structuredData = {
   '@context': 'https://schema.org',
@@ -48,9 +47,13 @@ const structuredData = {
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Seaguntech" />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
     <script type="application/ld+json" set:html={JSON.stringify(structuredData)}></script>
   </head>
   <body>

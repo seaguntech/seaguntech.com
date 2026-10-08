@@ -22,6 +22,12 @@ export const siteContent = {
     'Structured content and crawlability',
     'Performance-minded delivery',
   ] as const,
+  seo: {
+    title: 'Seaguntech | International technology consulting',
+    description:
+      'Seaguntech is an international technology consulting partner helping ambitious teams plan, build, modernize, and grow dependable software with clarity.',
+    ogImage: 'https://seaguntech.com/og-image.svg',
+  },
   hero: {
     title: 'Build what matters. Ship with clarity.',
     description:
@@ -33,7 +39,7 @@ export const services: readonly Service[] = [
   {
     title: 'Strategy & Architecture',
     description:
-      'Turn uncertainty into a practical technical direction, plan, and sequence of decisions.',
+      'Technical Planning turns uncertainty into a practical technical direction, plan, and sequence of decisions.',
   },
   {
     title: 'Product Delivery',
@@ -55,6 +61,7 @@ export const services: readonly Service[] = [
 export const contact = {
   email: 'admin@seaguntech.com',
   consultationHref: '#contact',
+  consultationMailto: 'mailto:admin@seaguntech.com?subject=Seaguntech%20consultation',
   portfolio: 'https://projects.quangpham.dev/',
 } as const;
 

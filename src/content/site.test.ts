@@ -14,6 +14,7 @@ describe('Seaguntech site content', () => {
     expect(siteContent.experience).toContain('10+');
     expect(contact.email).toBe('admin@seaguntech.com');
     expect(contact.consultationHref).toBe('#contact');
+    expect(contact.consultationMailto).toBe('mailto:admin@seaguntech.com?subject=Seaguntech%20consultation');
     expect(siteContent.hero.title).toBe('Build what matters. Ship with clarity.');
     expect(services).toHaveLength(4);
     expect(services.map((service) => service.title)).toEqual([
@@ -22,12 +23,16 @@ describe('Seaguntech site content', () => {
       'Legacy Modernization',
       'Fractional CTO',
     ]);
+    expect(services[0].description).toContain('Technical Planning');
     expect(siteContent.planningSteps).toEqual([
       'Understand',
       'Shape',
       'Sequence',
       'Ship with feedback',
     ]);
+    expect(siteContent.seo.description.length).toBeGreaterThanOrEqual(140);
+    expect(siteContent.seo.description.length).toBeLessThanOrEqual(160);
+    expect(siteContent.seo.ogImage).toBe('https://seaguntech.com/og-image.svg');
   });
 
   it('contains at least three public projects with render-safe metadata', () => {
