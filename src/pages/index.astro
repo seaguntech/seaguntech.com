@@ -14,6 +14,25 @@ import '../styles/global.css';
 const title = 'Seaguntech | International technology consulting';
 const description =
   'Seaguntech helps ambitious teams turn complex ideas into dependable software.';
+const canonicalUrl = 'https://seaguntech.com/';
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      name: 'Seaguntech',
+      url: canonicalUrl,
+      email: 'admin@seaguntech.com',
+      description,
+    },
+    {
+      '@type': 'WebSite',
+      name: 'Seaguntech',
+      url: canonicalUrl,
+      description,
+    },
+  ],
+};
 ---
 
 <!doctype html>
@@ -23,6 +42,16 @@ const description =
     <meta name="viewport" content="width=device-width" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Seaguntech" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <script type="application/ld+json" set:html={JSON.stringify(structuredData)}></script>
   </head>
   <body>
     <SiteNav />

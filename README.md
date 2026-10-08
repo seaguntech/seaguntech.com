@@ -24,3 +24,5 @@ pnpm test:e2e
 ```
 
 The site is static-first and keeps its public copy and curated project records in `src/content/site.ts`.
+
+SEO baseline is maintained in `src/pages/index.astro`, `public/robots.txt`, and `public/sitemap.xml`.
