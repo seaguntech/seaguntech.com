@@ -1,0 +1,18 @@
+---
+import { siteContent } from '../content/site';
+---
+
+<section class="section section-dark foundations" aria-labelledby="foundations-title">
+  <div class="container foundations-grid">
+    <div class="section-heading section-heading-dark">
+      <p class="eyebrow">Engineering foundations</p>
+      <h2 id="foundations-title">Make the work discoverable, usable, and ready to grow.</h2>
+      <p>Technical quality includes how people find, understand, and share what you build. We treat SEO as part of delivery—not a promise of rankings.</p>
+    </div>
+    <ul class="foundation-list">
+      {siteContent.engineeringFoundations.map((foundation) => (
+        <li><span aria-hidden="true">↗</span>{foundation}</li>
+      ))}
+    </ul>
+  </div>
+</section>

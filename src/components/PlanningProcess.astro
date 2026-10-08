@@ -1,0 +1,29 @@
+---
+import { siteContent } from '../content/site';
+
+const descriptions = [
+  'Understand the problem, constraints, users, and the outcome that matters.',
+  'Shape the smallest sound solution and make the important trade-offs visible.',
+  'Sequence the work so risk is reduced before the team commits to delivery.',
+  'Ship, learn, and keep improving with feedback grounded in reality.',
+];
+---
+
+<section class="section section-subtle" id="approach" aria-labelledby="planning-title">
+  <div class="container">
+    <div class="section-heading section-heading-wide">
+      <p class="eyebrow">Technical planning</p>
+      <h2 id="planning-title">Make the next technical decision easier.</h2>
+      <p>Good delivery starts before the first pull request. We turn ambiguity into a plan your team can act on.</p>
+    </div>
+    <ol class="planning-grid">
+      {siteContent.planningSteps.map((step, index) => (
+        <li class="planning-step">
+          <span class="step-number">0{index + 1}</span>
+          <h3>{step}</h3>
+          <p>{descriptions[index]}</p>
+        </li>
+      ))}
+    </ol>
+  </div>
+</section>

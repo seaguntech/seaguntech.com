@@ -46,4 +46,11 @@ describe('Seaguntech site content', () => {
     expect(project.description).toBe('');
     expect(project.href).toBeUndefined();
   });
+
+  it('describes technical discoverability without promising search outcomes', () => {
+    const copy = siteContent.engineeringFoundations.join(' ').toLowerCase();
+
+    expect(copy).toContain('semantic html');
+    expect(copy).not.toMatch(/guaranteed rankings|guaranteed traffic|#1 ranking/);
+  });
 });

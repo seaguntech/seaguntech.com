@@ -16,6 +16,12 @@ export const siteContent = {
   founderNote:
     'Seaguntech is a new agency built on more than a decade of hands-on software delivery for international teams.',
   planningSteps: ['Understand', 'Shape', 'Sequence', 'Ship with feedback'] as const,
+  engineeringFoundations: [
+    'Semantic HTML',
+    'Metadata and share previews',
+    'Structured content and crawlability',
+    'Performance-minded delivery',
+  ] as const,
   hero: {
     title: 'Build what matters. Ship with clarity.',
     description:

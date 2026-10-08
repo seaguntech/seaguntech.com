@@ -3,9 +3,13 @@ import SiteNav from '../components/SiteNav.astro';
 import Hero from '../components/Hero.astro';
 import ExperienceSignal from '../components/ExperienceSignal.astro';
 import Services from '../components/Services.astro';
+import PlanningProcess from '../components/PlanningProcess.astro';
+import SelectedWork from '../components/SelectedWork.astro';
+import EngineeringFoundations from '../components/EngineeringFoundations.astro';
 import FounderNote from '../components/FounderNote.astro';
 import ContactPanel from '../components/ContactPanel.astro';
 import SiteFooter from '../components/SiteFooter.astro';
+import '../styles/global.css';
 
 const title = 'Seaguntech | International technology consulting';
 const description =
@@ -26,13 +30,9 @@ const description =
       <Hero />
       <ExperienceSignal />
       <Services />
-      <section class="section" id="work" aria-labelledby="work-title">
-        <div class="container section-heading">
-          <p class="eyebrow">Selected work</p>
-          <h2 id="work-title">A track record built in public.</h2>
-          <p>Selected projects from the founder’s public portfolio.</p>
-        </div>
-      </section>
+      <PlanningProcess />
+      <SelectedWork />
+      <EngineeringFoundations />
       <FounderNote />
       <ContactPanel />
     </main>
