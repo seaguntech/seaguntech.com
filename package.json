@@ -1,0 +1,23 @@
+{
+  "name": "seaguntech.com",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.33.0",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "check": "astro check",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.10",
+    "astro": "^7.3.7"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "typescript": "^6.0.3",
+    "vitest": "^5.0.3"
+  }
+}
