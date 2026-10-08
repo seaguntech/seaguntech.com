@@ -12,7 +12,7 @@ export type ProjectRecord = {
 
 export const siteContent = {
   name: 'Seaguntech',
-  experience: '10+ years building software across JP · SG · US · UK',
+  experience: '10+ years building software across JP · AUS · US · UK',
   founderNote:
     'Seaguntech is a new agency built on more than a decade of hands-on software delivery for international teams.',
   planningSteps: ['Understand', 'Shape', 'Sequence', 'Ship with feedback'] as const,
