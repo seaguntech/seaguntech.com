@@ -48,7 +48,36 @@ export const contact = {
   portfolio: 'https://projects.quangpham.dev/',
 } as const;
 
-export const selectedProjects: readonly ProjectRecord[] = [];
+export const selectedProjects: readonly ProjectRecord[] = [
+  {
+    title: 'Glo Yoga & Meditation Platform',
+    description:
+      'An online yoga and meditation platform with thousands of professionally filmed classes for people worldwide.',
+    tags: ['Next.js', 'React', 'TypeScript'],
+    href: 'https://glo.com/',
+  },
+  {
+    title: 'Restful Mind App',
+    description:
+      'A mobile product focused on meditation, mindfulness, relaxation, and better sleep.',
+    tags: ['React Native', 'TypeScript', 'React Query', 'Zustand'],
+    href: 'https://apps.apple.com/vn/app/the-restful-mind/id6738620498',
+  },
+  {
+    title: 'Early Bird App',
+    description:
+      "An iOS and Android product helping families invest in their children's financial futures.",
+    tags: ['React Native', 'TypeScript', 'Redux'],
+    href: 'https://apps.apple.com/us/app/earlybird-invest-celebrate/id1517808320',
+  },
+  {
+    title: 'Centz Web System',
+    description:
+      'A web system with core flows including authentication, homepage, support, and FAQ across web and mobile.',
+    tags: ['React', 'TypeScript', 'Redux Saga'],
+    href: 'https://mycentz.com/home',
+  },
+];
 
 export function normalizeProject(record: ProjectRecord): ProjectRecord {
   return {
