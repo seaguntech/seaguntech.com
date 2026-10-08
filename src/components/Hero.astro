@@ -1,0 +1,22 @@
+---
+import { contact, siteContent } from '../content/site';
+---
+
+<section class="hero section-dark" aria-labelledby="hero-title">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow">International technology consulting</p>
+      <h1 id="hero-title">Build what matters.<br /><span>Ship with clarity.</span></h1>
+      <p class="hero-lede">{siteContent.hero.description}</p>
+      <div class="hero-actions">
+        <a class="button" href={contact.consultationHref}>Book a consultation <span aria-hidden="true">↗</span></a>
+        <a class="button button-secondary" href={`mailto:${contact.email}`}>Email us</a>
+      </div>
+    </div>
+    <div class="hero-signal" aria-hidden="true">
+      <span class="hero-signal-line"></span>
+      <span class="hero-signal-dot"></span>
+      <span class="hero-signal-label">Clarity is a technical advantage.</span>
+    </div>
+  </div>
+</section>

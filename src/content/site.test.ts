@@ -13,7 +13,21 @@ describe('Seaguntech site content', () => {
     expect(siteContent.name).toBe('Seaguntech');
     expect(siteContent.experience).toContain('10+');
     expect(contact.email).toBe('admin@seaguntech.com');
+    expect(contact.consultationHref).toBe('#contact');
+    expect(siteContent.hero.title).toBe('Build what matters. Ship with clarity.');
     expect(services).toHaveLength(4);
+    expect(services.map((service) => service.title)).toEqual([
+      'Strategy & Architecture',
+      'Product Delivery',
+      'Legacy Modernization',
+      'Fractional CTO',
+    ]);
+    expect(siteContent.planningSteps).toEqual([
+      'Understand',
+      'Shape',
+      'Sequence',
+      'Ship with feedback',
+    ]);
   });
 
   it('contains at least three public projects with render-safe metadata', () => {

@@ -1,0 +1,22 @@
+---
+import { services } from '../content/site';
+---
+
+<section class="section" id="services" aria-labelledby="services-title">
+  <div class="container">
+    <div class="section-heading">
+      <p class="eyebrow">What we do</p>
+      <h2 id="services-title">From technical direction to dependable delivery.</h2>
+      <p>Senior guidance for the decisions that shape a product, a system, and the team behind it.</p>
+    </div>
+    <div class="service-grid">
+      {services.map((service, index) => (
+        <article class="service-card">
+          <span class="card-index">0{index + 1}</span>
+          <h3>{service.title}</h3>
+          <p>{service.description}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

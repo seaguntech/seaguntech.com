@@ -1,4 +1,12 @@
 ---
+import SiteNav from '../components/SiteNav.astro';
+import Hero from '../components/Hero.astro';
+import ExperienceSignal from '../components/ExperienceSignal.astro';
+import Services from '../components/Services.astro';
+import FounderNote from '../components/FounderNote.astro';
+import ContactPanel from '../components/ContactPanel.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+
 const title = 'Seaguntech | International technology consulting';
 const description =
   'Seaguntech helps ambitious teams turn complex ideas into dependable software.';
@@ -13,8 +21,21 @@ const description =
     <meta name="description" content={description} />
   </head>
   <body>
-    <main>
-      <h1>Seaguntech</h1>
+    <SiteNav />
+    <main id="main-content">
+      <Hero />
+      <ExperienceSignal />
+      <Services />
+      <section class="section" id="work" aria-labelledby="work-title">
+        <div class="container section-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2 id="work-title">A track record built in public.</h2>
+          <p>Selected projects from the founder’s public portfolio.</p>
+        </div>
+      </section>
+      <FounderNote />
+      <ContactPanel />
     </main>
+    <SiteFooter />
   </body>
 </html>

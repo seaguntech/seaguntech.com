@@ -1,0 +1,18 @@
+---
+import { contact, siteContent } from '../content/site';
+---
+
+<header class="site-header">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="container nav-shell">
+    <a class="wordmark" href="/" aria-label={`${siteContent.name} home`}>
+      {siteContent.name}<span aria-hidden="true">.</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href={contact.consultationHref}>Contact</a>
+    </nav>
+    <a class="button button-small" href={contact.consultationHref}>Book a consultation</a>
+  </div>
+</header>

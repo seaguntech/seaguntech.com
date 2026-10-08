@@ -1,0 +1,20 @@
+---
+import { contact, siteContent } from '../content/site';
+---
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="wordmark" href="/">{siteContent.name}<span aria-hidden="true">.</span></a>
+      <p>Technology consulting for teams turning complex ideas into dependable software.</p>
+    </div>
+    <div class="footer-links">
+      <a href={contact.portfolio} rel="noreferrer">Founder portfolio <span aria-hidden="true">↗</span></a>
+      <a href={`mailto:${contact.email}`}>{contact.email}</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© {new Date().getFullYear()} {siteContent.name}</span>
+    <span>International technology consulting</span>
+  </div>
+</footer>
